@@ -1,0 +1,142 @@
+/* cores 
+#91D27C quente suave
+#93A777 verde militar claro *
+#C4FAAB verde menta frio *
+#fffff branco
+#485C4B militar escuro * */
+
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root{
+    --cormenu: #91D27C; 
+    --corp: #6C9665;
+    --corh: #93A777;
+    --corb1: #C4FAAB; 
+
+    --font-menu: "Bebas Neue", sans-serif;
+    --font-texto: "Montserrat", sans-serif; 
+    --font-footer: "Roboto", sans-serif;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+background-color: var(--corb1)
+}
+p{
+    margin: 15px 0px 15px 0px;
+    text-align: justify;
+    text-indent: 30px;
+}
+header{
+    background-image: linear-gradient(to bottom, var(--cormenu), var(--corb1), var(--cormenu));
+    min-height: 150px;
+    padding-top: 40px;
+}
+header >h1{
+    color: white;
+    text-shadow: 5px 5px 0px rgba(0, 0, 0, 0.064);
+    font-family: var(--font-menu);
+    text-align: center;
+    font-size: 80px;
+    
+}
+header > p{
+    color: white;
+    font-family: var(--font-texto);
+    text-align: center;
+    font-size: 15px;
+    margin: auto
+}
+nav{
+    background-color: var(--corp);
+    font-family: var(--font-menu);
+    text-align: right;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.114);
+}
+nav >a {
+    color: white;
+    text-decoration: none;
+    padding-right: 20px;
+    margin-right: 10px;
+    transition-duration: .2s;
+}
+nav > a:hover{
+    background-color:#C4FAAB; 
+    border-radius: 5px;
+    color: #6C9665;
+    padding-left: 5px;
+    padding-right: 3px; 
+}
+main{
+    background-color: white;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding: 20px;
+    box-shadow: 9px 9px 9px #485c4b36;
+    min-width: 200px;
+    max-width: 800px;
+    margin: auto; 
+    margin-bottom: 30px;
+}
+main h2, h3{
+    color: var(--corh);
+    font-family: var(--font-texto);
+    text-transform: uppercase;
+    
+}
+main p {
+    color: var(--corp);
+    font-family: var(--font-texto);
+    font-size: 15px;  
+}
+img, iframe{
+width: 100%;
+}
+.pequena{
+    max-width: 350px;
+    margin: auto;
+    display: block;
+}
+.links{
+    background-color:#485c4b3f;
+    border-radius: 5px;
+    padding: 2px 6px;
+    text-decoration: none;
+}
+aside{
+background-color:#92d27c71;
+border-radius: 5px;
+padding: 0px 15px 10px 15px; 
+box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.075);
+margin-top: -30px;
+}
+aside > h3{
+    background-color: #6C9665;
+    border-radius: 4px 4px 0px 0px;
+    margin: -10px -15px 0px -15px;
+    color: #C4FAAB;
+    padding: 10px;
+    box-shadow: 4px 4px 20px #6c966594;
+}
+aside > ul{
+    list-style-position: inside;
+    columns: 2;
+    list-style-type: '\2714\00A0\00A0';
+}
+
+footer > p{
+    background-color: var(--corp);
+    color: var(--corb1);
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 10px;
+}
